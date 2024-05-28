@@ -1,12 +1,21 @@
 #include<iostream>
 using namespace std;
 int main(){
-    float k,m,c;
-    cout<<"Enter length in centimeter"<<endl;
-    cin >>c;
-    m=c*0.01;
-    k=m*0.001;
-    cout <<"In metre:"<<m<<endl;
-    cout <<"In kilometre:"<<k<<endl;
+    string s;
+    cout <<"Enter a string:";
+    cin >>s;
+    int i,v=0,c=0;
+    for (i=0;s[i];i++)
+    {
+        if (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' ||s[i]=='u')
+        { 
+            v++;
+        }
+        else{
+            c++;
+        }
+    }
+    cout <<"Number of vowels:"<<v<<endl;
+    cout <<"Number of consonants:"<<c;
     return 0;
 }

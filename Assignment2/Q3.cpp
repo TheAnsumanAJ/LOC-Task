@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    int n,i,j,m=0;
-    cout <<"Enter size of array:";
+    int n,i,j,x;
+    cout<<"Enter size of array:";
     cin >>n;
     int a[n];
     cout <<"Enter elements of array:";
@@ -13,13 +13,13 @@ int main()
     }
     for (i=0;i<n;i++)
     {
-        for (j=i;j<n;j++)
+        for (j=i+1;j<n;j++)
         {
-            if (a[j]<0)
+            if(a[i]>a[j])
             {
-                m=a[i];
+                x=a[i];
                 a[i]=a[j];
-                a[j]=m;
+                a[j]=x;
             }
         }
     }

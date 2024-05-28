@@ -2,17 +2,16 @@
 using namespace std;
 int main()
 {
-    float a,b,c,s;
-    cout <<"Enter angles of a triangle:"<<endl;
-    cin >>a>>b>>c;
-    s=a+b+c;
-    if(s==180)
+    int i,j,n;
+    cout <<"Enter number of rows:";
+    cin >>n;
+    for(i=n;i>0;i--)
     {
-        cout<<"Triangle is valid.";
-    }
-    else
-    {
-        cout<<"Not Valid";
+        for (j=0;j<i;j++)
+        {
+            cout <<"*"<<" ";
+        }
+        cout <<endl;
     }
     return 0;
 }
